@@ -5,7 +5,7 @@ WORKDIR /usr/src/nuxt3-app
 COPY package.json /usr/src/nuxt3-app/package.json
 COPY . .
 
-# 可以在docker上打包时需要放开
+## When packaging on docker
 # RUN npm install pnpm -g
 # RUN pnpm i --shamefully-hoist
 # RUN pnpm run build
